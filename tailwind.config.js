@@ -9,6 +9,7 @@ module.exports = {
       'btn-hover-blue': '#2a4bca',
       'heading-blue': '#011A41',
       'gray': '#555',
+      'light-gray': '#F4F6F6',
     },
     fontFamily: {
       jost: ['Jost', 'sans-serif'],
