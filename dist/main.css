@@ -556,6 +556,22 @@ video {
   display: flex;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
+.basis-2\/4 {
+  flex-basis: 50%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -564,6 +580,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
 .rounded-full {
@@ -590,12 +612,49 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .font-sans {
   font-family: Open Sans, sans-serif;
 }
 
+.font-jost {
+  font-family: Jost, sans-serif;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-medium {
   font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .text-btn-text-blue {
@@ -611,6 +670,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-heading-blue {
+  --tw-text-opacity: 1;
+  color: rgb(1 26 65 / var(--tw-text-opacity));
 }
 
 .transition {
