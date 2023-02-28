@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slick - Landing Page</title>
+  <title>Financi - Landing Page</title>
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
         <a href="#" class="text-gray hover:text-text-blue">Pricing</a>
         <a href="#" class="text-gray hover:text-text-blue">Product</a>
         <a href="#" class="text-gray hover:text-text-blue">About Us</a>
-        <a href="#" class="text-gray hover:text-text-blue">Careers</a>
+        <a href="#testimonial" class="text-gray hover:text-text-blue">Client</a>
         <a href="#" class="text-gray hover:text-text-blue">Community</a>
       </div>
 
@@ -47,9 +47,9 @@
   <!-- Navbar End-->
 
   <section class="hero pt-24">
-    <div class="container mx-auto flex">
+    <div class="container mx-auto flex items-center">
       <div class="basis-2/4 space-y-10">
-        <h1 class="max-w-lg font-bold font-jost text-6xl text-heading-blue capitalize">Bring everyone together to build better products</h1>
+        <h1 class="max-w-lg font-bold font-jost text-6xl text-heading-blue capitalize">We Help Our Clients To Grow Their Business</h1>
         <p class="max-w-lg font-sans font-normal text-gray">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
         <div>
           <a href="#" class="transition duration-700 font-medium bg-text-blue text-btn-text-blue py-3 px-5 rounded-full hover:bg-btn-hover-blue hover:text-white">Get Started</a>
@@ -58,7 +58,10 @@
 
 
       <div class="basis-2/4 flex justify-center">
-        <img src="image/illustration-intro.svg" alt="illustration-intro">
+        <!-- <img src="image/illustration-intro.svg" alt="illustration-intro"> -->
+
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_hadzves0.json"  background="transparent" speed="1" style="width: 60%; height: auto;" loop  autoplay></lottie-player>
+
       </div>
     </div>
   </section>
@@ -110,7 +113,28 @@
   </section>
   <!-- Features section End -->
 
-  <section class="pt-24 mb-24">
+  <section class="h-64 mt-24 mb-56 pt-24 bg-gradient-to-r from-btn-hover-blue to-btn-text-blue">
+    <div class="container max-w-3xl mx-auto p-12 border border-btn-text-blue bg-white rounded-md">
+      <h2 class="font-jost text-heading-blue font-bold text-4xl text-center capitalize pb-10">Request A Call-Back</h2>
+      <form class="space-y-5">
+        <div class="flex justify-between space-x-3">
+          <input type="text" placeholder="Your Name" class="basis-1/2 border border-btn-text-blue px-2 py-4 rounded-lg focus:outline-text-blue placeholder-heading-blue">
+          <input type="text" placeholder="Your Email" class="basis-1/2 border border-btn-text-blue px-2 py-4 rounded-lg focus:outline-text-blue placeholder-heading-blue">
+        </div>
+        <div class="flex justify-between space-x-3">
+          <input type="text" placeholder="Your Mobile" class="basis-1/2 border border-btn-text-blue px-2 py-4 rounded-lg focus:outline-text-blue placeholder-heading-blue">
+          <input type="text" placeholder="Subject" class="basis-1/2 border border-btn-text-blue px-2 py-4 rounded-lg focus:outline-text-blue placeholder-heading-blue">
+        </div>
+        <div>
+          <textarea placeholder="Message" class="w-full border border-btn-text-blue px-2 py-8 rounded-lg focus:outline-text-blue placeholder-heading-blue"></textarea>
+        </div>
+        <input type="submit" value="Submit Now" class="w-full transition duration-700 font-medium bg-text-blue text-btn-text-blue py-3 px-5 rounded-full cursor-pointer hover:bg-btn-hover-blue hover:text-white">
+      </form>
+    </div>
+  </section>
+  <!-- Form section End -->
+
+  <section class="pt-60 mb-24" id="testimonial">
     <div class="container mx-auto">
       <h2 class="font-jost text-heading-blue font-bold text-4xl text-center capitalize">What Our Clients Say!</h2>
 
@@ -283,7 +307,7 @@
 
             <div>
               <form class="flex justify-between bg-white p-2 rounded-md">
-                <input type="email" placeholder="Enter email" class="focus:outline-0 hover:border-0">
+                <input type="email" placeholder="Enter email" class="placeholder-heading-blue focus:outline-0 hover:border-0">
                 <input type="submit" value="SignUp" class="bg-text-blue text-btn-text-blue px-4 py-2 rounded-md cursor-pointer">
               </form>
             </div>
@@ -299,7 +323,8 @@
   </section>
   <!-- Footer section End -->
 
-
+  <!-- Lootie files -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>
