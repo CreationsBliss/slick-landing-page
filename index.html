@@ -21,7 +21,7 @@
 
 <body>
 
-  <nav>
+   <nav>
     <div class="container mx-auto flex justify-between py-9">
       <div class="log">
         <a href="#">
@@ -46,16 +46,16 @@
   </nav>
   <!-- Navbar End-->
 
-  <section class="hero pt-24">
-    <div class="container mx-auto flex items-center">
-      <div class="basis-2/4 space-y-10">
-        <h1 class="max-w-lg font-bold font-jost text-6xl text-heading-blue capitalize">We Help Our Clients To Grow Their Business</h1>
+  <section class="hero pt-10 px-6">
+    <div class="container mx-auto flex flex-col-reverse items-center md:flex-row">
+
+      <div class="basis-2/4 space-y-10 text-center md:text-left">
+        <h1 class="max-w-lg font-bold font-jost text-4xl text-heading-blue capitalize md:text-6xl pt-10 md:pt-0">We Help Our Clients To Grow Their Business</h1>
         <p class="max-w-lg font-sans font-normal text-gray">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
         <div>
           <a href="#" class="transition duration-700 font-medium bg-text-blue text-btn-text-blue py-3 px-5 rounded-full hover:bg-btn-hover-blue hover:text-white">Get Started</a>
         </div>
       </div>
-
 
       <div class="basis-2/4 flex justify-center">
         <!-- <img src="image/illustration-intro.svg" alt="illustration-intro"> -->
@@ -67,16 +67,17 @@
   </section>
   <!-- Hero section End -->
 
-  <section id="about" class="pt-24">
-    <div class="container mx-auto flex">
+  <section id="about" class="pt-24 px-6">
+    <div class="container mx-auto flex flex-col space-y-10 md:flex-row md:space-y-0">
+
       <div class="basis-2/4 space-y-10">
-        <h2 class="font-jost text-heading-blue font-bold text-4xl max-w-md capitalize">Awesome Financial Services For Business</h2>
-        <p class="max-w-md font-sans font-normal text-gray">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+        <h2 class="font-jost text-heading-blue font-bold text-3xl text-center max-w-md capitalize md:text-4xl md:text-left">Awesome Financial Services For Business</h2>
+        <p class="max-w-md font-sans font-normal text-gray text-center md:text-left">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
       </div>
 
-
       <div class="basis-2/4 space-y-10">
-        <div class="flex space-x-7">
+
+        <div class="hidden md:flex space-x-7">
           <div>
             <h2 class="font-jost font-normal text-white text-lg bg-text-blue px-4 py-1 rounded-full">01</h2>
           </div>
@@ -85,9 +86,21 @@
             <h3 class="font-jost font-bold text-heading-blue text-lg capitalize">Track company-wide progress</h3>
             <p class="font-sans font-normal text-gray">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger picture again.</p>
           </div>
+
         </div>
 
-        <div class="flex space-x-7">
+        <div class="block md:hidden space-y-7">
+          <div class="flex">
+            <h3 class="w-full font-jost font-bold text-heading-blue text-lg capitalize bg-btn-text-blue rounded-l-full py-2"> <span class="font-jost font-normal text-white text-lg bg-text-blue px-4 py-2 rounded-full">01</span> Track company-wide progress</h3>
+          </div>
+
+          <div class="space-y-5">
+            <p class="font-sans font-normal text-gray">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger picture again.</p>
+          </div>
+
+        </div>
+
+        <div class="hidden md:flex space-x-7">
           <div>
             <h2 class="font-jost font-normal text-white text-lg bg-text-blue px-4 py-1 rounded-full">02</h2>
           </div>
@@ -98,7 +111,18 @@
           </div>
         </div>
 
-        <div class="flex space-x-7">
+        <div class="block md:hidden space-y-7">
+          <div class="flex">
+            <h3 class="w-full font-jost font-bold text-heading-blue text-lg capitalize bg-btn-text-blue rounded-l-full py-2"> <span class="font-jost font-normal text-white text-lg bg-text-blue px-4 py-2 rounded-full">02</span> Advanced Built-In Reports</h3>
+          </div>
+
+          <div class="space-y-5">
+            <p class="font-sans font-normal text-gray">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+          </div>
+
+        </div>
+
+        <div class="hidden md:flex space-x-7">
           <div>
             <h2 class="font-jost font-normal text-white text-lg bg-text-blue px-4 py-1 rounded-full">03</h2>
           </div>
@@ -108,20 +132,31 @@
             <p class="font-sans font-normal text-gray">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
           </div>
         </div>
+
+        <div class="block md:hidden space-y-7">
+          <div class="flex">
+            <h3 class="w-full font-jost font-bold text-heading-blue text-lg capitalize bg-btn-text-blue rounded-l-full py-2"> <span class="font-jost font-normal text-white text-lg bg-text-blue px-4 py-2 rounded-full">03</span> Everything You Need In One Place</h3>
+          </div>
+
+          <div class="space-y-5">
+            <p class="font-sans font-normal text-gray">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
   <!-- Features section End -->
 
-  <section id="contact" class="h-64 mt-24 mb-56 pt-24 bg-gradient-to-r from-btn-hover-blue to-btn-text-blue">
+  <section id="contact" class="h-64 mt-24 mb-96 pt-24 px-6 bg-gradient-to-r from-btn-hover-blue to-btn-text-blue md:mb-56">
     <div class="container max-w-3xl mx-auto p-12 border border-btn-text-blue bg-white rounded-md">
-      <h2 class="font-jost text-heading-blue font-bold text-4xl text-center capitalize pb-10">Request A Call-Back</h2>
+      <h2 class="font-jost text-heading-blue font-bold text-3xl text-center capitalize pb-10 md:text-4xl">Request A Call-Back</h2>
       <form class="space-y-5">
-        <div class="flex justify-between space-x-3">
+        <div class="flex flex-col justify-between space-x-0 space-y-5 md:flex-row md:space-x-3 md:space-y-0">
           <input type="text" placeholder="Your Name" class="basis-1/2 border border-btn-text-blue px-2 py-4 rounded-lg focus:outline-text-blue placeholder-heading-blue">
           <input type="text" placeholder="Your Email" class="basis-1/2 border border-btn-text-blue px-2 py-4 rounded-lg focus:outline-text-blue placeholder-heading-blue">
         </div>
-        <div class="flex justify-between space-x-3">
+        <div class="flex flex-col justify-between space-x-0 space-y-5 md:flex-row md:space-x-3 md:space-y-0">
           <input type="text" placeholder="Your Mobile" class="basis-1/2 border border-btn-text-blue px-2 py-4 rounded-lg focus:outline-text-blue placeholder-heading-blue">
           <input type="text" placeholder="Subject" class="basis-1/2 border border-btn-text-blue px-2 py-4 rounded-lg focus:outline-text-blue placeholder-heading-blue">
         </div>
@@ -134,11 +169,12 @@
   </section>
   <!-- Form section End -->
 
-  <section class="pt-60 mb-24" id="testimonial">
+  <section class="pt-60 mb-24 px-6" id="testimonial">
     <div class="container mx-auto">
-      <h2 class="font-jost text-heading-blue font-bold text-4xl text-center capitalize">What Our Clients Say!</h2>
+      <h2 class="font-jost text-heading-blue font-bold text-3xl text-center capitalize md:text-4xl">What Our Clients Say!</h2>
 
-      <div class="pt-16 flex space-x-7">
+      <div class="pt-16 flex items-stretch flex-col space-x-0 space-y-10 md:flex-row md:space-x-7 md:space-y-0">
+
         <div class="text-center basis-2/6">
           <div class="flex justify-center -mb-8">
             <img class="w-20" src="image/avatar-anisha.png" alt="anisha">
@@ -181,28 +217,31 @@
   </section>
   <!-- Testimonial section End -->
 
-  <section class="footer-top py-10 bg-footer-top-blue">
+  <section class="footer-top py-10 px-6 bg-footer-top-blue">
     <div class="container mx-auto">
-      <div class="flex justify-between items-center">
+      <div class="flex flex-col justify-between items-center space-y-10 md:flex-row md:space-y-0">
+
         <div>
-          <h2 class="font-jost text-white font-bold text-4xl max-w-xl capitalize">
+          <h2 class="font-jost text-white font-bold text-3xl max-w-xl capitalize text-center md:text-left md:text-4xl">
             Simplify how your team works today
           </h2>
         </div>
+
       <div>
         <a href="#" class="transition duration-700 font-medium bg-white text-btn-hover-blue py-3 px-5 rounded-full hover:bg-btn-hover-blue hover:text-white">Get Started</a>
       </div>
+
       </div>
     </div>
   </section>
-  <!-- Team work section End -->
+  <!-- Footer top section End -->
 
-  <section class="py-24 bg-footer-blue">
+  <section class="py-24 px-6 bg-footer-blue">
     <div class="container mx-auto">
-      <div class="flex justify-between">
+      <div class="flex flex-col justify-between space-y-10 md:flex-row md:space-y-0">
 
         <!-- single div -->
-        <div class="basis-1/4">
+        <div class="basis-full md:basis-2/4 lg:basis-1/4">
           <h3 class="font-jost font-bold text-white text-lg pb-5">Our Office</h3>
           <div class="space-y-2">
             <p class="font-sans font-normal text-btn-text-blue"> <i class="fa-solid fa-location-dot pr-2"></i> 123 Street, New York, USA </p>
@@ -238,7 +277,7 @@
         </div>
 
         <!-- single div -->
-        <div class="basis-1/4">
+        <div class="basis-full md:basis-2/4 lg:basis-1/4">
           <h3 class="font-jost font-bold text-white text-lg pb-5">Services</h3>
           <div class="space-y-2">
            
@@ -268,7 +307,7 @@
         </div>
 
         <!-- single div -->
-        <div class="basis-1/4">
+        <div class="basis-full md:basis-2/4 lg:basis-1/4">
           <h3 class="font-jost font-bold text-white text-lg pb-5">Quick Links</h3>
           <div class="space-y-2">
               <p class="font-sans font-normal text-btn-text-blue hover:text-white"> 
@@ -297,7 +336,7 @@
         </div>
 
         <!-- single div -->
-        <div class="basis-1/4">
+        <div class="basis-full md:basis-2/4 lg:basis-1/4">
           <h3 class="font-jost font-bold text-white text-lg pb-5">Newsletter</h3>
           <div class="space-y-2 max-w-xs">
            
@@ -307,7 +346,8 @@
 
             <div>
               <form class="flex justify-between bg-white p-2 rounded-md">
-                <input type="email" placeholder="Enter email" class="placeholder-heading-blue focus:outline-0 hover:border-0">
+                <input type="email" placeholder="Enter email" class="placeholder-heading-blue w-full focus:outline-0 hover:border-0">
+
                 <input type="submit" value="SignUp" class="bg-text-blue text-btn-text-blue px-4 py-2 rounded-md cursor-pointer">
               </form>
             </div>
