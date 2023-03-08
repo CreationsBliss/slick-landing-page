@@ -1,4 +1,4 @@
-#Slick
+# Slick
 A tailwindcss landing page template
 
 ### Live Website
